@@ -1,0 +1,5 @@
+@import '../../../../theme/main.css';
+
+.formInput {
+    width: var(--form-input-width);
+}

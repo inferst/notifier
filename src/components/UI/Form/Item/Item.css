@@ -1,0 +1,5 @@
+@import '../../../../theme/main.css';
+
+.formItem {
+    margin: var(--padding-medium) 0;
+}

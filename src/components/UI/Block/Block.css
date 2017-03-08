@@ -1,0 +1,25 @@
+@import "../../../theme/main.css";
+
+.paddingSmall {
+    padding: var(--padding-small);
+}
+
+.paddingMedium {
+    padding: var(--padding-medium);
+}
+
+.paddingBig {
+    padding: var(--padding-big);
+}
+
+.marginSmall {
+    margin: var(--padding-small);
+}
+
+.marginMedium {
+    margin: var(--padding-medium);
+}
+
+.marginBig {
+    margin: var(--padding-big);
+}

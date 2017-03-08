@@ -1,0 +1,5 @@
+@import "../../../../theme/main.css";
+
+.form {
+    margin: var(--padding-big) 0;
+}
