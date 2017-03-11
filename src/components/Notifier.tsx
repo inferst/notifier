@@ -33,7 +33,9 @@ class Notifier extends React.Component<NotifierProps, undefined> {
         const messages = (
             <Block padding="medium">
                 {
-                    this.props.messages.slice(0, this.props.maxMessages).map((message) => {
+                    this.props.messages.sort((a, b) => {
+                        return b.datetime - a.datetime;
+                    }).slice(0, this.props.maxMessages).map((message) => {
                         return <Message key={message.id} title={message.title} datetime={message.datetime} />
                     })
                 }
