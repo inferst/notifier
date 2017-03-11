@@ -1,0 +1,2 @@
+--require test/helpers/setup.js
+--webpack-config config/test.js

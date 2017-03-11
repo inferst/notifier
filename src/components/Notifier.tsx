@@ -1,5 +1,5 @@
 import * as React from 'react';
-import IMessage from '../models/message';
+import IMessage from '../interfaces/message';
 import Message from './Message';
 import {Popover, Position, PopoverInteractionKind} from '@blueprintjs/core';
 import Block from './UI/Block/Block';

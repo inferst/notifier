@@ -1,5 +1,5 @@
-import Message from '../models/message';
-import messages from './messages';
+import Message from '../../src/interfaces/message';
+import messages from '../../src/reducers/messages';
 import {expect} from 'chai';
 import 'mocha';
 
@@ -20,7 +20,7 @@ describe('messages reducer', () => {
         expect(state[0]).to.have.property('id', 2);
         expect(state[0]).to.have.property('title', 'New message');
         expect(state[0]).to.have.property('unread', true);
-        expect(state[0]).to.have.property('datetime').that.to.be.a('date');
+        expect(state[0]).to.have.property('datetime').to.be.a('date');
     });
 
     it('should handle delete all messages', () => {

@@ -2,10 +2,10 @@ import * as React from 'react';
 import {Dispatch} from 'redux';
 import {connect} from 'react-redux';
 import {setOpenNotify} from '../actions';
-import Message from '../models/message';
+import Message from '../interfaces/message';
 import Notifier from '../components/Notifier';
 import Navbar from '../components/UI/Navbar/Navbar';
-import State from "../models/state";
+import State from "../interfaces/state";
 
 interface NavbarProps {
     messages: Message[];

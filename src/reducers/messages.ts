@@ -1,4 +1,4 @@
-import Message from '../models/message';
+import Message from '../interfaces/message';
 
 // TODO Action may be any data
 interface Action {

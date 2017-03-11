@@ -13,7 +13,7 @@ import Block from '../components/UI/Block/Block';
 import Input from '../components/UI/Form/Input/Input';
 import Button from '../components/UI/Button/Button';
 
-import State from "../models/state";
+import State from "../interfaces/state";
 
 interface FormProps {
     dispatch: Dispatch<{}>;
