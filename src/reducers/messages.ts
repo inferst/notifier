@@ -59,13 +59,13 @@ const messages = (state = initialState, action: Action): Message[] => {
             }, -1);
 
             return [
-                ...state,
                 {
                     id: id + 1,
                     title: action.title,
                     unread: true,
                     datetime: new Date()
-                }
+                },
+                ...state
             ];
         }
 

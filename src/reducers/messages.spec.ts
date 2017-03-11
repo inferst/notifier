@@ -17,13 +17,10 @@ describe('messages reducer', () => {
             title: 'New message'
         });
 
-        expect(state[1]).to.include.keys({
-            id: 3,
-            title: 'New message',
-            unread: true
-        });
-
-        expect(state[1].datetime).to.be.a('date');
+        expect(state[0]).to.have.property('id', 2);
+        expect(state[0]).to.have.property('title', 'New message');
+        expect(state[0]).to.have.property('unread', true);
+        expect(state[0]).to.have.property('datetime').that.to.be.a('date');
     });
 
     it('should handle delete all messages', () => {
